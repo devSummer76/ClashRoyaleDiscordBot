@@ -1,0 +1,3 @@
+[submodule "RoyaleApi_Wrapper"]
+	path = RoyaleApi_Wrapper
+	url = https://github.com/devSummer76/royale-wrapper.git
