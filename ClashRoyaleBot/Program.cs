@@ -26,7 +26,7 @@ namespace ClashRoyaleBot {
                 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                 //                       CONFIGURATION
 
-                string token = "bot token here";
+                string token = "12345678901234567890123456789012345678901234567890123456789012345678";
                 string clashRoyale_ApiKey = "api key here";
                 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -79,7 +79,7 @@ namespace ClashRoyaleBot {
                 client.MessageReceived += HandleCommand;
 
                 // Discover all of the commands in this assembly and load them.
-                await commands.AddModulesAsync(Assembly.GetEntryAssembly());
+                await commands.AddModulesAsync(Assembly.GetEntryAssembly(), services);
             }
 
             public async Task HandleCommand(SocketMessage messageParam) {
